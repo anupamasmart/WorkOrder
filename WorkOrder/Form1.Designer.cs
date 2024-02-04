@@ -102,6 +102,7 @@
             btnGenWorkOrder.TabIndex = 4;
             btnGenWorkOrder.Text = "Generate a Work Order";
             btnGenWorkOrder.UseVisualStyleBackColor = false;
+            btnGenWorkOrder.Click += btnGenWorkOrder_Click;
             // 
             // panelface
             // 

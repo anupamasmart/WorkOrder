@@ -13,7 +13,7 @@ namespace WorkOrder
         Antenna_Details AntennaD = new Antenna_Details() { TopLevel = false, TopMost = true };
         private void btnUserDetails_Click(object sender, EventArgs e)
         {
-            
+
             UserD.FormBorderStyle = FormBorderStyle.None;
             panelface.Controls.Add(UserD);
             UserD.Show();
@@ -24,7 +24,7 @@ namespace WorkOrder
 
         private void btnSiteDetails_Click(object sender, EventArgs e)
         {
-            
+
             SiteD.FormBorderStyle = FormBorderStyle.None;
             panelface.Controls.Add(SiteD);
             SiteD.Show();
@@ -34,12 +34,19 @@ namespace WorkOrder
 
         private void btnAntennaDetails_Click(object sender, EventArgs e)
         {
-            
-            AntennaD.FormBorderStyle= FormBorderStyle.None; ;
+
+            AntennaD.FormBorderStyle = FormBorderStyle.None; ;
             panelface.Controls.Add(AntennaD);
             AntennaD.Show();
             UserD.Hide();
             SiteD.Hide();
+        }
+
+        private void btnGenWorkOrder_Click(object sender, EventArgs e)
+        {
+            Work_Order WorkOD = new Work_Order();
+            WorkOD.Show();
+            
         }
     }
 }

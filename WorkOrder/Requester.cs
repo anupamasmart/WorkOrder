@@ -16,5 +16,12 @@ namespace WorkOrder
         {
             InitializeComponent();
         }
+
+        private void btnNEXT_Click(object sender, EventArgs e)
+        {
+            Requesting_Site_Info ReqSite = new Requesting_Site_Info() { TopLevel = false, TopMost = true };
+
+
+        }
     }
 }
