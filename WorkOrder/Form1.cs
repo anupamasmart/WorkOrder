@@ -10,7 +10,7 @@ namespace WorkOrder
         }
         User_Details UserD = new User_Details() { TopLevel = false, TopMost = true };
         Site_Details SiteD = new Site_Details() { TopLevel = false, TopMost = true };
-        Antenna_Details AntennaD = new Antenna_Details() { TopLevel = false, TopMost = true };
+        New_Antenna_Details AntennaD = new New_Antenna_Details() { TopLevel = false, TopMost = true };
         private void btnUserDetails_Click(object sender, EventArgs e)
         {
 
@@ -46,7 +46,12 @@ namespace WorkOrder
         {
             Work_Order WorkOD = new Work_Order();
             WorkOD.Show();
-            
+
+        }
+
+        private void panelface_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

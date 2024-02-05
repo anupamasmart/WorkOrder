@@ -52,7 +52,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(177, 7);
+            label1.Location = new Point(332, 9);
             label1.Name = "label1";
             label1.Size = new Size(443, 54);
             label1.TabIndex = 0;
@@ -108,14 +108,15 @@
             // 
             panelface.Location = new Point(3, 124);
             panelface.Name = "panelface";
-            panelface.Size = new Size(1085, 669);
+            panelface.Size = new Size(1085, 845);
             panelface.TabIndex = 5;
+            panelface.Paint += panelface_Paint;
             // 
             // Dialog_Work_Order
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1088, 831);
+            ClientSize = new Size(1088, 981);
             Controls.Add(panelface);
             Controls.Add(btnGenWorkOrder);
             Controls.Add(btnUserDetails);

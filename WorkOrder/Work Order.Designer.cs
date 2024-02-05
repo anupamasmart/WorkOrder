@@ -39,7 +39,7 @@
             // 
             panelWorkOrder.Location = new Point(3, 61);
             panelWorkOrder.Name = "panelWorkOrder";
-            panelWorkOrder.Size = new Size(1194, 555);
+            panelWorkOrder.Size = new Size(1194, 809);
             panelWorkOrder.TabIndex = 0;
             panelWorkOrder.Paint += panelWorkOrder_Paint;
             // 
@@ -56,7 +56,7 @@
             // btnRequester
             // 
             btnRequester.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btnRequester.Location = new Point(3, 634);
+            btnRequester.Location = new Point(3, 876);
             btnRequester.Name = "btnRequester";
             btnRequester.Size = new Size(219, 50);
             btnRequester.TabIndex = 2;
@@ -67,7 +67,7 @@
             // btnReSiteDetails
             // 
             btnReSiteDetails.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
-            btnReSiteDetails.Location = new Point(228, 634);
+            btnReSiteDetails.Location = new Point(228, 876);
             btnReSiteDetails.Name = "btnReSiteDetails";
             btnReSiteDetails.Size = new Size(219, 50);
             btnReSiteDetails.TabIndex = 3;
@@ -78,7 +78,7 @@
             // btnAntennaInfo
             // 
             btnAntennaInfo.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAntennaInfo.Location = new Point(453, 634);
+            btnAntennaInfo.Location = new Point(453, 877);
             btnAntennaInfo.Name = "btnAntennaInfo";
             btnAntennaInfo.Size = new Size(253, 50);
             btnAntennaInfo.TabIndex = 4;
@@ -90,7 +90,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1184, 742);
+            ClientSize = new Size(1184, 952);
             Controls.Add(btnAntennaInfo);
             Controls.Add(btnReSiteDetails);
             Controls.Add(btnRequester);
