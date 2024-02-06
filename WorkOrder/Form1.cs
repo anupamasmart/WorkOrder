@@ -53,5 +53,10 @@ namespace WorkOrder
         {
 
         }
+
+        private void Dialog_Work_Order_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

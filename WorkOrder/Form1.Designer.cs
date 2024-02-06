@@ -125,6 +125,7 @@
             Controls.Add(panel1);
             Name = "Dialog_Work_Order";
             Text = "Form1";
+            FormClosed += Dialog_Work_Order_FormClosed;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

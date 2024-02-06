@@ -11,7 +11,7 @@ namespace WorkOrder
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Dialog_Work_Order());
+            Application.Run(new User_Login());
         }
     }
 }

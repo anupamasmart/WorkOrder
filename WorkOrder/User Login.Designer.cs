@@ -34,6 +34,7 @@
             label3 = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
+            btnExit = new Button();
             SuspendLayout();
             // 
             // label1
@@ -41,7 +42,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(284, 19);
+            label1.Location = new Point(257, 18);
             label1.Name = "label1";
             label1.Size = new Size(223, 54);
             label1.TabIndex = 0;
@@ -49,49 +50,63 @@
             // 
             // btnLogin
             // 
-            btnLogin.BackColor = SystemColors.ControlLightLight;
+            btnLogin.BackColor = SystemColors.ButtonHighlight;
             btnLogin.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLogin.Location = new Point(295, 277);
+            btnLogin.Location = new Point(405, 252);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(212, 62);
             btnLogin.TabIndex = 1;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(219, 99);
+            label2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(178, 99);
             label2.Name = "label2";
-            label2.Size = new Size(106, 28);
+            label2.Size = new Size(148, 38);
             label2.TabIndex = 2;
             label2.Text = "Username";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(219, 165);
+            label3.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(178, 165);
             label3.Name = "label3";
-            label3.Size = new Size(101, 28);
+            label3.Size = new Size(139, 38);
             label3.TabIndex = 3;
             label3.Text = "Password";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(380, 103);
+            textBox1.Location = new Point(390, 110);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(240, 27);
             textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(380, 169);
+            textBox2.Location = new Point(390, 176);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(240, 27);
             textBox2.TabIndex = 5;
             textBox2.TextChanged += textBox2_TextChanged;
+            // 
+            // btnExit
+            // 
+            btnExit.BackColor = SystemColors.ButtonHighlight;
+            btnExit.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            btnExit.ForeColor = Color.Red;
+            btnExit.Location = new Point(178, 252);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(212, 62);
+            btnExit.TabIndex = 6;
+            btnExit.Text = "EXIT";
+            btnExit.UseVisualStyleBackColor = false;
+            btnExit.Click += btnExit_Click;
             // 
             // User_Login
             // 
@@ -99,6 +114,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HotTrack;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnExit);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label3);
@@ -119,5 +135,6 @@
         private Label label3;
         private TextBox textBox1;
         private TextBox textBox2;
+        private Button btnExit;
     }
 }

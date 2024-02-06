@@ -30,23 +30,23 @@
         {
             label1 = new Label();
             panel1 = new Panel();
+            panel4 = new Panel();
+            txtRegion = new TextBox();
+            txtContact = new TextBox();
+            txtPassword = new TextBox();
+            txtName = new TextBox();
+            txtID = new TextBox();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
             panel3 = new Panel();
             btnNew = new Button();
             btnDelete = new Button();
             btnSave = new Button();
             btnEdit = new Button();
             panel2 = new Panel();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            panel4 = new Panel();
             dataGridView1 = new DataGridView();
             Column6 = new DataGridViewTextBoxColumn();
             Column1 = new DataGridViewTextBoxColumn();
@@ -55,9 +55,9 @@
             Column4 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
+            panel4.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
-            panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -80,6 +80,108 @@
             panel1.Size = new Size(1133, 416);
             panel1.TabIndex = 1;
             // 
+            // panel4
+            // 
+            panel4.Controls.Add(txtRegion);
+            panel4.Controls.Add(txtContact);
+            panel4.Controls.Add(txtPassword);
+            panel4.Controls.Add(txtName);
+            panel4.Controls.Add(txtID);
+            panel4.Controls.Add(label6);
+            panel4.Controls.Add(label5);
+            panel4.Controls.Add(label4);
+            panel4.Controls.Add(label3);
+            panel4.Controls.Add(label2);
+            panel4.Location = new Point(163, 14);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(764, 277);
+            panel4.TabIndex = 16;
+            // 
+            // txtRegion
+            // 
+            txtRegion.Location = new Point(290, 217);
+            txtRegion.Name = "txtRegion";
+            txtRegion.Size = new Size(206, 27);
+            txtRegion.TabIndex = 15;
+            // 
+            // txtContact
+            // 
+            txtContact.Location = new Point(290, 166);
+            txtContact.Name = "txtContact";
+            txtContact.Size = new Size(206, 27);
+            txtContact.TabIndex = 14;
+            // 
+            // txtPassword
+            // 
+            txtPassword.Location = new Point(290, 112);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(206, 27);
+            txtPassword.TabIndex = 13;
+            // 
+            // txtName
+            // 
+            txtName.Location = new Point(290, 63);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(441, 27);
+            txtName.TabIndex = 12;
+            // 
+            // txtID
+            // 
+            txtID.Location = new Point(290, 11);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(206, 27);
+            txtID.TabIndex = 11;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(37, 211);
+            label6.Name = "label6";
+            label6.Size = new Size(89, 31);
+            label6.TabIndex = 10;
+            label6.Text = "Region";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(37, 160);
+            label5.Name = "label5";
+            label5.Size = new Size(135, 31);
+            label5.TabIndex = 9;
+            label5.Text = "Contact No";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(37, 106);
+            label4.Name = "label4";
+            label4.Size = new Size(114, 31);
+            label4.TabIndex = 8;
+            label4.Text = "Password";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(37, 57);
+            label3.Name = "label3";
+            label3.Size = new Size(77, 31);
+            label3.TabIndex = 7;
+            label3.Text = "Name";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(37, 5);
+            label2.Name = "label2";
+            label2.Size = new Size(92, 31);
+            label2.TabIndex = 6;
+            label2.Text = "User ID";
+            // 
             // panel3
             // 
             panel3.Controls.Add(btnNew);
@@ -99,6 +201,7 @@
             btnNew.TabIndex = 3;
             btnNew.Text = "NEW";
             btnNew.UseVisualStyleBackColor = true;
+            btnNew.Click += btnNew_Click;
             // 
             // btnDelete
             // 
@@ -108,6 +211,7 @@
             btnDelete.TabIndex = 2;
             btnDelete.Text = "DELETE";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnSave
             // 
@@ -117,6 +221,7 @@
             btnSave.TabIndex = 1;
             btnSave.Text = "SAVE";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // btnEdit
             // 
@@ -126,6 +231,7 @@
             btnEdit.TabIndex = 0;
             btnEdit.Text = "EDIT";
             btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Click += btnEdit_Click;
             // 
             // panel2
             // 
@@ -135,108 +241,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1143, 74);
             panel2.TabIndex = 2;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(37, 5);
-            label2.Name = "label2";
-            label2.Size = new Size(92, 31);
-            label2.TabIndex = 6;
-            label2.Text = "User ID";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(37, 57);
-            label3.Name = "label3";
-            label3.Size = new Size(77, 31);
-            label3.TabIndex = 7;
-            label3.Text = "Name";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(37, 106);
-            label4.Name = "label4";
-            label4.Size = new Size(114, 31);
-            label4.TabIndex = 8;
-            label4.Text = "Password";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(37, 160);
-            label5.Name = "label5";
-            label5.Size = new Size(135, 31);
-            label5.TabIndex = 9;
-            label5.Text = "Contact No";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(37, 211);
-            label6.Name = "label6";
-            label6.Size = new Size(89, 31);
-            label6.TabIndex = 10;
-            label6.Text = "Region";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(290, 11);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(206, 27);
-            textBox1.TabIndex = 11;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(290, 63);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(441, 27);
-            textBox2.TabIndex = 12;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(290, 112);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(206, 27);
-            textBox3.TabIndex = 13;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(290, 166);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(206, 27);
-            textBox4.TabIndex = 14;
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(290, 217);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(206, 27);
-            textBox5.TabIndex = 15;
-            // 
-            // panel4
-            // 
-            panel4.Controls.Add(textBox5);
-            panel4.Controls.Add(textBox4);
-            panel4.Controls.Add(textBox3);
-            panel4.Controls.Add(textBox2);
-            panel4.Controls.Add(textBox1);
-            panel4.Controls.Add(label6);
-            panel4.Controls.Add(label5);
-            panel4.Controls.Add(label4);
-            panel4.Controls.Add(label3);
-            panel4.Controls.Add(label2);
-            panel4.Location = new Point(163, 14);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(764, 277);
-            panel4.TabIndex = 16;
             // 
             // dataGridView1
             // 
@@ -302,12 +306,13 @@
             Controls.Add(panel1);
             Name = "User_Details";
             Text = "User_Details";
+            Load += User_Details_Load;
             panel1.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             panel3.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
@@ -323,11 +328,11 @@
         private Button btnEdit;
         private Panel panel2;
         private Panel panel4;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtRegion;
+        private TextBox txtContact;
+        private TextBox txtPassword;
+        private TextBox txtName;
+        private TextBox txtID;
         private Label label6;
         private Label label5;
         private Label label4;
